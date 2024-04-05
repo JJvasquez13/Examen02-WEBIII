@@ -36,7 +36,7 @@ function reiniciarTemporizador() {
   inactivityTimer = setTimeout(function () {
     alert("Tu sesión ha expirado debido a inactividad.");
     salir();
-  }, 1 * 60 * 1000); // 3 minutos en milisegundos
+  }, 3 * 60 * 1000); // 3 minutos en milisegundos
 }
 
 // Configurar eventos para reiniciar el temporizador de inactividad cuando haya interacción del usuario
