@@ -5,9 +5,9 @@ var container = firebase.apps[0].storage().ref();
 const txtPosic = document.querySelector("#txtPosic");
 const txtSigno = document.querySelector("#txtSigno");
 const txtRango = document.querySelector("#txtRango");
-const txtAstro = document.querySelector("#txtAstro"); // New element
-const txtPiedra = document.querySelector("#txtPiedra"); // New element
-const txtElemento = document.querySelector("#txtElemento"); // New element
+const txtAstro = document.querySelector("#txtAstro");
+const txtPiedra = document.querySelector("#txtPiedra");
+const txtElemento = document.querySelector("#txtElemento");
 const txtArchi = document.querySelector("#txtArchi");
 
 const btnLoad = document.querySelector("#btnLoad");
@@ -29,9 +29,9 @@ btnLoad.addEventListener("click", function () {
           posic: parseInt(txtPosic.value),
           signo: txtSigno.value,
           rango: txtRango.value,
-          astro: txtAstro.value, // Add new field
-          piedra: txtPiedra.value, // Add new field
-          elemento: txtElemento.value, // Add new field
+          astro: txtAstro.value,
+          piedra: txtPiedra.value,
+          elemento: txtElemento.value,
           url: url,
         };
 
@@ -52,9 +52,9 @@ function limpiar() {
   txtPosic.value = "";
   txtSigno.value = "";
   txtRango.value = "";
-  txtAstro.value = ""; // Reset new element
-  txtPiedra.value = ""; // Reset new element
-  txtElemento.value = ""; // Reset new element
+  txtAstro.value = "";
+  txtPiedra.value = "";
+  txtElemento.value = "";
   txtArchi.value = "";
   txtPosic.focus();
 }

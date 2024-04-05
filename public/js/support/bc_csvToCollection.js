@@ -24,7 +24,6 @@ async function lecturaCSV(archivo) {
       let salida = {};
 
       for (let index2 = 0; index2 < etiquetas.length; index2++) {
-        // Determinar el tipo de dato y convertirlo
         salida[etiquetas[index2]] = convertirTipo(valores[index2]);
       }
       db.collection(nomarch)

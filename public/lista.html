@@ -161,14 +161,6 @@
               <h5 class="modal-title" id="modalModificarLabel">
                 Modificar Signo Zodiacal
               </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
             </div>
             <div class="modal-body">
               <form id="form-modificar">
@@ -183,10 +175,6 @@
                 <div class="form-group">
                   <label for="txtRango">Rango:</label>
                   <input type="text" class="form-control" id="txtRango" />
-                </div>
-                <div class="form-group">
-                  <label for="ttArchi">URL Imagen:</label>
-                  <input type="text" class="form-control" id="txtArci" />
                 </div>
                 <div class="form-group">
                   <label for="txtElemento">Elemento:</label>
@@ -212,6 +200,7 @@
                 type="button"
                 class="btn btn-secondary"
                 data-dismiss="modal"
+                onclick="cerrarModal()"
               >
                 Cancelar
               </button>
@@ -235,6 +224,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- load js code to recover data from collection and container  -->
     <script defer src="js/zodiac/lstzodiaco.js"></script>
